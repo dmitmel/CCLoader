@@ -1,5 +1,13 @@
 <html>
 	<head>
+		<script type="text/javascript">
+			if (window.process) {
+				const newUrl = process.env.CCLOADER_OVERRIDE_MAIN_URL;
+				if (newUrl) {
+					window.location.replace(newUrl);
+				}
+			}
+		</script>
 		<title>CrossCode - CCLoader</title>
 		<link rel="stylesheet" href="index.css">
 		<script type="text/javascript">
